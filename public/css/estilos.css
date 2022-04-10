@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#oculto {
+    display: none;
+}
+
+.subtitle {
+    text-align: center;
+    font-family: 'Playfair Display';
+    font-size: x-large;
+    padding: 20px 0 10px 0;
+    background-color: #f5f5f5;
+    display: block;
+}
+
+.subtitle2 {
+    width: 100%;
+    text-align: center;
+    font-size: medium;
+    padding: 30px 0 10px 20px;
+    background-color: #f5f5f5;
+    display: block;
+}
+
+.count {
+    font-style: oblique;
+    font-weight: bold;
+    text-align: right;
+    font-family: 'Playfair Display';
+    font-size: medium;
+    padding: 30px 0 10px 20px;
+}
+
+h4{
+    margin: 0;
+}
+
+#form_container {
+    margin: 0 auto;
+    display: flex;
+}
+
+.main {
+    margin:0 auto;
+    display: flex;
+    grid-auto-rows: minmax(300px, auto);
+    background-color: #f5f5f5;
+}
+
+article{
+    width: 30%;
+    background-color: white;
+    font-family: 'Playfair Display';
+    padding: 10px 20px 10px 20px;
+    box-sizing: border-box;
+}
+
+    article:hover{
+        background-color: black;
+        color: white;
+    }
+
+header{
+    width: 100%;
+    height: 170px;
+    background-color:  #212F3C;
+}
+
+.social{
+    position:fixed;
+    left: 0;
+    top: 110px;
+    z-index: 2000;
+}
+
+.social ul {
+    list-style: none;
+}
+
+.social ul li a {
+    display:inline-block;
+    color: #fff;
+    background: #000;
+    padding: 5px 5px;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.social ul li .icon-facebook {
+    background: #3b5998;
+}
+
+.social ul li .icon-twitter {
+    background: #00abf0;
+}
+
+.social ul li .icon-instagram {
+    background: #ae181f;
+}
+
+.social ul li .icon-youtube {
+    background: #666666;
+}
+
+.social ul li .icon-facebook:hover {
+    padding: 8px 15px;
+    background: #000;
+}
+
+.social ul li .icon-twitter:hover {
+    padding: 8px 15px;
+    background: #000;
+}
+
+.social ul li .icon-instagram:hover {
+    padding: 8px 15px;
+    background: #000;
+}
+
+.social ul li .icon-youtube:hover {
+    padding: 8px 15px;
+    background: #000;
+}
+
+.fijo{
+    position: fixed;
+    top: 0;
+    }
+
+footer{
+    width: 100%;
+    text-align: center;
+    height: 80px;
+    color: #31231e;
+    background-color: #c9d2d0;
+    font-family: 'Antonio';
+}
+
+.t1{
+    color: #fff;
+    font-size: 55px;
+    text-decoration: none;
+    height: 72px;
+    padding: 0;
+    margin: 0;
+}
+
+.t2{
+    color: #fff;
+    font-size: 20px;
+    height: 28px;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+img{
+    width: 180px;
+    margin: 0;
+}
+
+.menu-bar {
+	background-color: #393e42; 
+	margin-top: 20px;
+}
+
+nav ul{
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    display: block;
+}
+
+nav li{
+    position: relative;
+    display: inline-block;
+}
+
+    nav li a{
+        display: block;
+        padding: 3px 10px;
+        color: #C9C8C8;  
+        font-size: 20px;
+        font-family: 'Antonio';
+        text-decoration: underline;
+    }
+
+        nav li a:hover{
+            color: #CE7D35;
+            transition: all .3s;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+.titulo-noticia{
+    font-style: normal;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.categoria-noticia{
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.texto-noticia{
+    font-style: normal;
+    font-size: 13px;
+    text-align: justify;
+}
+
+.image{
+    float: left;
+    width: 60%;
+    height: auto;
+    margin-right: 5px;
+}
+
+video{
+    height: auto;
+    width: 80%;
+    margin-top: 10px;
+}
+
+audio{
+    margin-top: 10px;
+}
+
+caption{
+    font-size: xx-large;
+}
+
+body{
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+#box {
+    font-family: 'Antonio';
+    font-weight: 700;
+    max-width: 180px;
+    width: 20%;
+    height: 100px;
+    float: left;
+}
+
+#box-date {
+    margin: 15px 0 0 0;
+    display: flex;
+    height: 30px;
+    padding: 0;
+}
+
+    #box-date span {
+        color: #848d95;
+        font-size: 16px;
+    }
+
+#box-time {
+    color: #848d95;
+    font-size: 22px;
+    display: block;
+}
+
+#articulo {
+    font-size: 15px;
+}
+
+span.hm-time, span.s-time {
+    padding: 6px 5px;
+    border-radius: 3px;
+}
+
+span.hm-time {
+    background: #24AADD;
+    color: #FFF;
+    font-size: 15px;
+}
+
+span.s-time {
+    background: #E5E5E5;
+    font-size: 15px;
+}
+
+span.f-time {
+    font-size: 15px;
+}
+
+select{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 150px;
+    padding: 0 20px;
+    font-family: 'Antonio';
+    font-size: 18px;
+}
+
+textarea{
+    font-family: 'Antonio';
+    font-size: 18px;
+    margin-left: 20px;
+    width: 800px;
+}
+
+form{
+    margin: 0 auto;
+}
+
+    form p{
+        font-family: 'Antonio';
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+.tipo-noticia{
+    font-family: 'Antonio';
+    font-size: 18px;
+}
+
+.categoria{
+    resize: none;
+}
+
+label{
+    font-family: 'Antonio';
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.formulario{
+    resize: none;
+    font-family: 'Antonio';
+    font-size: 15px;
+    margin-left: 20px;
+    width: 800px;
+}
+
+input{
+    margin-left: 20px;
+    font-family: 'Antonio';
+    font-size: 18px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 1000px){
+    article{
+        width: 100%;
+    }
+
+    .titulo{
+        width: 50%;
+        text-align: left;
+        height: auto;
+    }
+
+    #box{
+        width: 20%;
+    } 
+    
+}
+
+@media screen and (max-width: 850px){
+
+    .titulo{
+        width: 70%;
+        text-align: left;
+        height: auto;
+    }
+
+    #box{
+        width: 30%;
+        height: auto;
+        font-weight: 500;
+    }   
+
+    nav li a{
+        font-size: 20px;
+        margin: auto;
+    }
+
+    .pie{
+        text-align: match-parent;
+        font-size: 15px;
+        height: auto;
+    }
+    
+    textarea{
+        width: 431px;        
+    }
+
+    .formulario{
+        width: 100%;
+    }
+
+    #cabecera{
+        width: auto;
+    }
+
+    #fecha{
+        width: auto;
+    }
+
+    #articulo {
+        font-size: 12px;
+    }
+ 
+}
+
+@media screen and (max-width: 580px) {
+    #faro {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+
+        
+    .titulo{
+        width: 55%;
+        text-align: left;
+        height: auto;
+    }
+
+    #box{
+        width: 35%;
+    }
+
+    #box-time {
+        font-size: 20px;
+    }
+
+    nav li a{
+        width: 100%;
+        font-size: 13px;
+        margin: auto;
+    }
+
+    .pie{
+        text-align: match-parent;
+        font-size: 12px;
+        height: auto;
+    }
+
+    video{
+        height: auto;
+        width: 70%;
+        margin-top: 10px;
+    }
+
+    .subtitle{
+        width: 75%;
+        padding: 10px 0 10px 0;
+    }
+
+    button{
+        height: 10px;
+    }
+
+    .formulario{
+        margin: auto;
+    }
+
+    #faro {
+        display: none;
+    }
+
+    .btn-secondary {
+        height: 10px;
+    }
+}
+
